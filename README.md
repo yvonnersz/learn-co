@@ -1,37 +1,32 @@
-# learn-co
+# learn-co-dev
 
-The command line interface to Learn.co.
+Development version of the learn-co gem.
 
+## Why does this exist?
+
+While trying to We were having some issues with certain Ruby version managers reverting to old versi
 ## Installation
 
 Install with:
 
 ```
-$ gem install learn-co
+$ gem install learn-co-dev
 ```
-
-Alternatively, add this line to your application's Gemfile:
-
-```ruby
-gem 'learn-co'
-```
-
-And then execute:
-
-    $ bundle
 
 ## Usage
 
 From within a Learn.co lesson directory, run:
 
 ```
-$ learn [command]
+$ learn-dev [command]
 ```
 
 ## Contributing
 
-1. Fork it ( https://github.com/learn-co/learn-co/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+The only changes this fork should receive are:
+
+* Pull from upstream (git@github.com:learn-co/learn-co.git)
+* Bump the version of this gem
+* Generate a version of the gem `gem build learn-co.gemspec`
+* Push this gem to Ruby Gems with `gem push learn-co-dev-x.x.x.gem`
+* Pull the gem with `gem install learn-co-dev`
